@@ -1,0 +1,96 @@
+:root {
+  --main-bg-color: #1b212c;
+  --body-fonts: "Century Gothic";
+  --color:#ccc;
+ }
+
+body {
+   font-family: var(--body-fonts);
+   margin: 0px;
+   padding: 0px;
+   background: var(--main-bg-color);  
+   
+}
+
+.form {
+    display: flex;
+    justify-content:center;
+    height: 100vh;
+    align-items: center;
+    background-color:var(--main-bg-color);
+    color: #ccc;
+}
+
+.imgcontainer {
+    display: flex;
+    justify-content: center;
+    font-family: var(--body-fonts);
+    
+}
+.container {
+    display: flex;
+    justify-content:center;
+    flex-wrap:wrap-reverse;
+    gap: 10px 20px;
+    font-family: var(--body-fonts);
+    color: #ccc;
+    font-size:x-large;
+    flex-direction: column;
+    row-gap: 20px; 
+    align-items: center;
+    
+  }
+
+.container input {
+    display: block;
+    color:var(--color);
+    font-family: var(--body-fonts);
+    background-color: var(--main-bg-color);
+    border: 1px solid #f0e68c;
+    border-radius: 20px;
+    font-size: 16px;
+    padding: 10px 20px;
+    
+}
+
+.container button {
+  background-color: #f0e68c;
+  border-radius: 15px;
+  box-sizing: border-box;
+  color:black;
+  cursor: pointer;
+  font-family: var(--body-fonts);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+  min-height: 30px;
+  min-width: 0;
+  padding: 16px 24px;
+  text-align: center;
+        
+  }
+
+.container label{
+  color: #ccc;
+  font-weight: bold;
+  display: block;
+  width: 150px;
+  float: left;
+
+ }
+
+.img {
+  animation-name: example;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+
+  @keyframes example {
+    0%   {width: 80%;}
+    50%  {width: 75%;}
+    100% {width: 80%;}
+
+  }
+
+
